@@ -1,3 +1,5 @@
+# Inspired by the bunny project, adding more emoji style progress bar
+
 # bunny
 
 ![bunny training](bunny.gif)
@@ -23,5 +25,5 @@ for epoch in bunny(epochs):  # use bunny like tqdm
 # Installation
 
 ```
-pip install git+git://github.com/bheinzerling/bunny
+pip install git+git://github.com/demoonism/bunny
 ```
