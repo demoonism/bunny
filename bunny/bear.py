@@ -87,7 +87,6 @@ Please use `tqdm_gui(...)` instead of `tqdm(..., gui=True)`
 """, fp_write=getattr(self.fp, 'write', sys.stderr.write))
 
             tqdm.write("\r" + " " * self.ncols + "\n" * 8)  # make space for bunny
-            print("============="+emoji+"===========")
             for obj in iterable:
                 yield obj
                 # Update and possibly print the progressbar.
