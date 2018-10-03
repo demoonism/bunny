@@ -1,7 +1,12 @@
 # Inspired by the bunny project, adding more emoji style progress bar
 
 https://twitter.com/tkasasagi/status/1045582451769192449
+
 https://github.com/bheinzerling/bunny
+
+# bear
+
+![bear training](bear.gif)
 
 # bunny
 
@@ -12,7 +17,7 @@ https://github.com/bheinzerling/bunny
 # Usage:
 
 ```Python
-from bunny import bunny
+from bunny import bear
 import time
 
 # simulate long training epoch
@@ -21,7 +26,7 @@ def train_epoch():
 
 # training loop
 epochs = range(1, 151)
-for epoch in bunny(epochs):  # use bunny like tqdm
+for epoch in bear(epochs):  # use bunny like tqdm
 	train_epoch()
 ```
 
