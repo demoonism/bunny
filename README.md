@@ -1,10 +1,13 @@
 # Inspired by the bunny project, adding more emoji style progress bar
 
+https://twitter.com/tkasasagi/status/1045582451769192449
+https://github.com/bheinzerling/bunny
+
 # bunny
 
 ![bunny training](bunny.gif)
 
-https://twitter.com/tkasasagi/status/1045582451769192449
+
 
 # Usage:
 
