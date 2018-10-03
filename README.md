@@ -32,6 +32,7 @@ for epoch in bear(epochs):  # use bunny like tqdm
 
 # Installation
 
-```
+Require python > 3.6
+
 pip install git+git://github.com/demoonism/bunny
 ```
