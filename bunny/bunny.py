@@ -53,9 +53,8 @@ class bunny(tqdm):
     monitor = None
     _lock = TqdmDefaultWriteLock()
 
-    def __init__(self, iterable, emoji, **kwargs):
+    def __init__(self, iterable, **kwargs):
         super().__init__(iterable, **kwargs)
-        self.emoji = emoji
 
     def __iter__(self):
         """Backward-compatibility to use: for x in tqdm(iterable)"""
