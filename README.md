@@ -4,9 +4,17 @@ https://twitter.com/tkasasagi/status/1045582451769192449
 
 https://github.com/bheinzerling/bunny
 
+This framework is meant to be modular and flexible.
+
+More emoji will be added. If you want to add any cute emoji, feel free to make a pull request.
+
 # bear
 
 ![bear training](bear.gif)
+
+# cat
+
+![cat training](cat.gif)
 
 # bunny
 
@@ -17,7 +25,7 @@ https://github.com/bheinzerling/bunny
 # Usage:
 
 ```Python
-from bunny import bear
+from bunny import Bunny
 import time
 
 # simulate long training epoch
@@ -26,8 +34,9 @@ def train_epoch():
 
 # training loop
 epochs = range(1, 151)
-for epoch in bear(epochs):  # use bunny like tqdm
-	train_epoch()
+for epoch in Bunny(epochs,'bear'):  # use bunny like tqdm
+    train_epoch()
+
 ```
 
 # Installation
