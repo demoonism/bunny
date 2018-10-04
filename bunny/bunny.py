@@ -16,7 +16,7 @@ bunny = (['|￣￣￣￣￣￣￣￣|',
           ' (•ㅅ•) || ',
           ' / 　 づ'])
 
-class bunny(Emo):
+class Bunny(Emo):
     def __init__(self, iterable, emoji='bunny'):
         if emoji == 'bunny':
             super().__init__(iterable, bunny)

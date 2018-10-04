@@ -1,1 +1,1 @@
-from .bunny import bunny
+from .bunny import Bunny
