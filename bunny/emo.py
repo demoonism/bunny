@@ -87,7 +87,7 @@ class Emo(tqdm):
 Please use `tqdm_gui(...)` instead of `tqdm(..., gui=True)`
 """, fp_write=getattr(self.fp, 'write', sys.stderr.write))
 
-            tqdm.write("\r" + " " * self.ncols + "\n" * (len(self.emoji)+1))  # make space for bunny
+            tqdm.write("\r" + " " * self.ncols + "\n" * (len(self.emoji)+2))  # make space for bunny
             for obj in iterable:
                 yield obj
                 # Update and possibly print the progressbar.
@@ -144,20 +144,16 @@ Please use `tqdm_gui(...)` instead of `tqdm(..., gui=True)`
                         self.last_print_t = last_print_t = cur_t
                         self.miniters = miniters
 
-                tqdm.write(up * 9)  # move cursor up
+                tqdm.write(up * (len(self.emoji)+2))  # move cursor up
                 if self.total:
                     # move bunny
                     offset = " " * int(n / self.total * (self.ncols - 40))
                 else:
                     offset = ""
-                tqdm.write(offset + self.emoji[0])
-                tqdm.write(offset + self.emoji[1]) 
-                tqdm.write(offset + self.emoji[2])
-                tqdm.write(offset + f'|   {obj:>6}       |')  
-                tqdm.write(offset + self.emoji[3]) 
-                tqdm.write(offset + self.emoji[4]) 
-                tqdm.write(offset + self.emoji[5])
-                tqdm.write(offset + self.emoji[6])
+                for idx, drawing in enumerate(self.emoji):
+                    if idx == 2:
+                        tqdm.write(offset + f'|   {obj:>6}       |')
+                    tqdm.write(offset + drawing)
 
             # Closing the progress bar.
             # Update some internal variables for close().
