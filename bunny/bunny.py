@@ -1,4 +1,4 @@
-from emo import Emo
+from .emo import Emo
 
 bear = (['|￣￣￣￣￣￣￣￣|',
          '|    TRAINING    |',
